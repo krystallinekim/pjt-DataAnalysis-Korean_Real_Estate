@@ -9,6 +9,7 @@
 - [국토교통부 실거래가 공개시스템](https://rt.molit.go.kr/pt/xls/xls.do?mobileAt=)
 - [서울시 등록인구(월별) 통계](https://data.seoul.go.kr/dataList/11067/S/2/datasetView.do)
 - [대한민국 시장금리 추이](https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1073)
+- [소비자물가지수 통계](https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Flist_id%3DP2_6%26obj_var_id%3D%26seqNo%3D%26tblId%3DDT_1J22003%26vw_cd%3DMT_ZTITLE%26orgId%3D101%26path%3D%252FstatisticsList%252FstatisticsListIndex.do%26conn_path%3DMT_ZTITLE%26itm_id%3D%26lang_mode%3Dko%26scrId%3D%26)
 
 ## 프로젝트 주제
 - 서울 아파트 매매 데이터를 활용한 시장 분석
