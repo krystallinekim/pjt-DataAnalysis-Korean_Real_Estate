@@ -5,7 +5,7 @@
 최근 5년간(2020년 1월 ~ 2025년 6월) 부동산 시장 동향을 분석하고, 금리 및 정부 정책 변화가 시장에 미치는 영향을 탐구하는 것을 목표로 함.
 
 ## 데이터 출처
-- 분석 대상: 서울시의 1년간 아파트 매매/전·월세 데이터
+- 분석 대상: 서울시의 5년간 아파트 매매 데이터
 - [국토교통부 실거래가 공개시스템](https://rt.molit.go.kr/pt/xls/xls.do?mobileAt=)
 - [서울시 등록인구(월별) 통계](https://data.seoul.go.kr/dataList/11067/S/2/datasetView.do)
 - [대한민국 시장금리 추이](https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1073)
