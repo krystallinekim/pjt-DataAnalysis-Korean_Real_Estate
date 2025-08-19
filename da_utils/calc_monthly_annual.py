@@ -34,7 +34,7 @@ def calc_monthly_annual(df, factor):
 
     ## 3. 추세분석
     ### 이동평균/이동표준편차
-    monthly_stats['이동평균'] = monthly_stats.groupby(factor)['월평균거래금액'].transform(lambda x: x.rolling(12).mean())
-    monthly_stats['이동표준편차'] = monthly_stats.groupby(factor)['월평균거래금액'].transform(lambda x: x.rolling(12).std())
+    monthly_stats['이동평균'] = monthly_stats.groupby(factor)['월평균거래금액'].transform(lambda x: x.rolling(12, min_periods=1).mean())
+    monthly_stats['이동표준편차'] = monthly_stats.groupby(factor)['월평균거래금액'].transform(lambda x: x.rolling(12, min_periods=1).std())
 
     return monthly_stats, annual_stats
