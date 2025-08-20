@@ -12,10 +12,10 @@ def calc_monthly_annual(df, factor=None):
         ## 1. 월간 통계
         ### 월별 거래건수, 평균거래금액, 평균평단가
         monthly_stats = df.groupby([factor, '계약월']).agg({
-            '거래금액': ['count', 'mean'],
+            '거래금액': ['count', 'mean', 'median'],
             '평단가': 'mean'
         }).reset_index()
-        monthly_stats.columns = [factor, '계약월', '월별거래건수', '월평균거래금액', '월평균평단가']
+        monthly_stats.columns = [factor, '계약월', '월별거래건수', '월평균거래금액', '중위가격', '월평균평단가']
 
         ### 월별 수익률 계산
         monthly_stats.sort_values([factor,'계약월'], inplace=True)
@@ -40,10 +40,10 @@ def calc_monthly_annual(df, factor=None):
 
     else:
         monthly_stats = df.groupby('계약월').agg({
-            '거래금액': ['count', 'mean'],
+            '거래금액': ['count', 'mean', 'median'],
             '평단가': 'mean'
         }).reset_index()
-        monthly_stats.columns = ['계약월', '월별거래건수', '월평균거래금액', '월평균평단가']
+        monthly_stats.columns = ['계약월', '월별거래건수', '월평균거래금액', '중위가격', '월평균평단가']
         
         monthly_stats.sort_values('계약월', inplace=True)
         monthly_stats['월별수익률'] = np.log(monthly_stats['월평균거래금액'] / monthly_stats['월평균거래금액'].shift(1))
